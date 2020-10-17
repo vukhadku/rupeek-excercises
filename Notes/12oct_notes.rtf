@@ -1,0 +1,315 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 12 th October , 2020 Notes :\
+\
+<span> is a inline container element <span>\
+\
+In form we have a required attribute, which the browser will require in order to submit. \
+For date and number min max attributes can be used. \
+Texture min length attributes can be used. \
+\
+By default if a button is in a form then it is a submit button . \
+\
+We can add a remote using a command : git remote add xyz <link of repo>\
+\
+Checkboxes and Radio Buttons :\
+\
+We use Radio button to use the choose one between multiple options\
+Checkboxes are used to choose one or many between multiple options \
+\
+************************************************************************************************\
+\
+CSS : Cascading Style sheets \
+Used to laying things on a page .\
+\
+Including css :\
+There are three ways in which we can include css :\
+1) inline \
+2) Internal : in the document\
+3) external : in a separate file\
+\
+Inline : style attribute is used for inline styling , they are used only for elements. They cannot be shared.\
+<p style=\'93colour :red; font-size:20px\'94>\
+\
+\
+\
+\
+Internal : <style> </style>  tags is used for css , this is in the loading page .\
+element : Targeting the element \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 This will select all the paragraph on the html page \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 p\{\
+	font-weight:bold\
+\}\
+\
+\
+Targeting a id \
+\
+#id\{\
+\}\
+\
+\
+\
+External : separate CSS file . We use the external file if various html page use the same styling .\
+We have to include the css file in the html file \
+<link href=\'93location\'94  rel=\'93stylesheets\'94> \
+\
+para-3\{\
+Text-decoration : underline;\
+\}\
+\
+\
+.italic\{\
+Font-syle : italic;\
+\}\
+\
+****************************************************************\
+\
+Selectors in CSS:\
+1) class selector\
+2)element/tag selector\
+3) id selector\
+\
+\
+Element selector :\
+p\{\
+	font-size : 2em;\
+\}\
+\
+em : the default size assigned by the browser (16px) \
+2em: twice (32px)\
+\
+Selecting all the pragragrahs\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx7532\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+Selecting by class .\
+\
+.class\{\
+	color : red;\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+.main\{\
+	background-colour :blue;\
+\}\
+\
+\
+\
+\
+\
+ID selectors :\
+#intro-para \{\
+	font-weight :bold\
+\}\
+\
+\
+\
+\
+Attribute selector :\
+Selecting an element based on the attribute \
+\
+[target]\{\
+  Selects all the elements that have a target attribute	\
+	color : red;\
+\}\
+\
+\
+[href=\'93google.com\'94]\{\
+Selects those attributes that has href as google\
+\}\
+\
+\
+\
+\
+Universal selector :\
+\
+*\{\
+Border: 1px;\
+\}\
+\
+* means all selectors , it is also called as universal selectors \
+\
+\
+Pseudo class selectors:\
+Class which is applied to an element depending on the condition \
+\
+ *:hover \{\
+	background-color : gold\
+\}\
+\
+p : hover \{\
+	background-color :gold\
+\}\
+\
+p : active \{\
+	background-color : goldenrod\
+\}\
+\
+Different pseudo classes are applied together \
+\
+Type of selector used in pseudo rules , it is called specify of collectors\
+\
+*******************************************************************\
+\
+Combinators in css :\
+\
+Selects all the anchor tags that lie within a div\
+div a \{\
+	color : goldenrod\
+\}\
+\
+Space is important \
+\
+p.x \{\
+	color : blue	\
+\}\
+\
+Select paragraph having class x, satisfies both class x and should be a paragraph.\
+\
+\
+\
+p .x\{\
+	color : green\
+\}\
+\
+Selects  paragraph tags which have class x , these types are called as descended selectors.\
+\
+\
+\
+***********************************************************************\
+\
+Child selector :\
+\
+p > .x \{\
+\}\
+\
+A class x whose parent is a paragraph only parent not grandparent or else \'85.\
+\
+\
+\
+Complex selector :\
+Read it form right to left\
+.x span  >  #a-2-2\{\
+	/* select an element whose id is a-2-2 whose parent is  span , span is a descendent of class x \
+\}\
+\
+\
+************************************************************************\
+Conflict resolution and Specificity :\
+\
+If two colors in the same div then the color which comes the last is on the screen. \
+\
+Between internal and external types of css there is no difference , only the last one wins . \
+\
+Inline style has the highest preferences \'85.\
+\
+Class is more specific than type selector \
+\
+div#a & #a which gets more priority : div#a gets more specificity \
+\
+(0,?,?,?)\
+\
+(Inline, num_ids, num_classes, num_type) : \
+And at the first point of difference the decision is made.\
+\
+Html body div .intro ol #menu > li:hover \{\
+\}\
+\
+(0,1,2,5) is the specificity\
+\
+*******************************************************************\
+\
+Inheritance :\
+\
+<div style =\'93color : red ; border : 5px solid gray; padding :20px\'94>\
+	\'85..\
+	<p> \'85.</p>\
+</div>\
+\
+Everything within the div is blue , the color is inherited from the div\
+The paragraph will not get the border properties .\
+ Hence the border is not inherited from div neither is the padding \
+\
+Refer mdn to find the if the property is inherited or not . \
+\
+***************************************************************\
+\
+Box model : \
+\
+Inline elements will ignore the width , height and few other properties \
+\
+A block level element take as much as width the parent will give . \
+\
+*****************************************************\
+Hands on to create a Workshop app \
+\
+User agent stylesheet is the styles given by the browser.\
+\
+Color : rgb(220,220,220)  Rob to 255.\
+\
+\
+*******************************************************************\
+Normalise css \
+\
+Reset css will also remove some of the useful css setting also \
+Normalise css : https://necolas.github.io/normalize.css/\
+Line height is used to get text into centre of the line . \
+\
+Width 80 % of the parent \
+Then we use margin as auto which distributes the remaining 10 , 10 to left and right respectively.\
+\
+Images always take their natural size in html . \
+They don\'92t take the size of the parent .\
+\
+!important overrides other rules , this should be rarely used, like text-align center.\
+\
+***********************************************************************\
+\
+Flex box :\
+\
+Flex has two directions one is main axis , another is called cross axis\
+\
+If the main is horizontal the children gets arranges horizontal \
+If the main is vertical then the children gets arranged vertical\
+\
+For the parent we set \
+\
+.parent \{\
+	display : flex;\
+	flex-direction ; row;\
+\}\
+\
+It width will adjust according to parent width , at some point of time it will overflow. \
+\
+By default they will not wrap , they will go out of the parent\
+\
+For wrapping , we set \
+Justify-content: space-between ; extra space will be distributed equally .\
+\
+Flex-wrap :wrap\
+\
+Flex-basis :~ width of the flex children.\
+\
+Items of the flex should get the same height , this attributes is set in parent , child (refer for better clarity)\
+Align-item : strech * check !!!\
+\
+Refer flex-box-froggy game to learn flex box.\
+\
+\
+
+\fs48 https://vukhadku.github.io/workshops-app/
+\fs24 \
+\
+\
+Great mistake of Js typeof null is object.\
+}

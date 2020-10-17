@@ -1,0 +1,210 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Learning HTML \
+\
+
+\f1 HTML stands for Hyper Text Markup Language\
+It is not a programming language \
+It is a Markup language.\
+\
+File must end with \'91.html\'92\
+Generally index.html is the root of the website\
+\
+\
+HTML Tags:\
+\
+Elements names are surrounded by angle brackets <>\
+Normally come in pairs (start tag and end tag)\
+End Tag is usually the same but with forward slash \
+Some tags close themselves\
+\
+Ex : <h1> About us </h1>\
+	 <p> This is paragraph </p>\
+	 <br> This is line break; \
+\
+\
+\
+HTML Structure :\
+\
+<html>\
+	<head>\
+		<title> Page title </title>\
+	</head>\
+\
+	<body>\
+		<h1> This is a heading </h1>\
+		<p>  This is a paragraph </p>\
+		<p>  This is an another paragraph <p>\
+	</body>\
+ </html>\
+\
+ head: head contains the links to css , javascript. metadata, description.\
+ Body: contains the markup for the web.\
+\
+\
+<!DOCKTYPE html > This is a representation of HTML5\
+ \
+<!\'97 This is a comment in html \'97>\
+\
+Tags:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Tags are broadly divided into two categories\
+1) Inline elements :\
+	Do not start on a new line \
+	Take only the necessary width\
+ex: <span>, <img> ,<a>\
+\
+2) Block Elements :\
+	Start on a new line \
+	Take full width available\
+ex: <div>, <h1>\'97<h6> ,<p> ,<form>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+Heading tags : there are six tags in heading h1 to h6 , h1 is the biggest heading and h6 is the smallest.\
+\
+<h1>This is head 1 </h1>\
+<h2>This is head 2 </h2>\
+.\
+.\
+.\
+<h6> This is head 6 </h2>\
+\
+\
+Paragraph : \
+Tip : You can use Emmet type of programming skills \
+Lorem<tab> generates the entire lorem text\
+Lorem10<tab> generates 10 word form lore text\
+\
+<p> </p>\
+Paragraph is a block level element , it also has a margin ~1em.\
+\
+<strong> </strong> : By default it becomes bold. Usually used to make the text stick out\
+\
+<em> /<em> : it is for emphasis, be default it is Italic\
+<small> </small> :This will make the letters smaller\
+\
+Links :\
+\
+<a href=\'93 \'93 target=\'93_blank\'94 > : href is the location we want the link to open , target=\'93_blank\'94 will make the link open in another tab.\
+\
+List : There are basically two types of list \
+\
+Unordered list:\
+\
+<ul>\
+	<li> </li>\
+	<li> </li>\
+</ul>\
+\
+Adds default padding and default margin.\
+\
+Ordered list: \
+<ol>\
+	<li> </li>\
+	<li> </li>\
+</ol>\
+\
+Tables :\
+\
+ Th: stands for table header.\
+\
+<table>\
+	<thead> \
+	 	<tr>\
+			<th> Name </th>\
+			<th> Email </th>\
+			<th> Age   </th>\
+		</tr>\
+	</thead>\
+	<tbody>\
+		<tr>\
+		 	<td> name  </td>\
+		 	<td> Email@email.com</td>\
+		 	<td> 21 </td>\
+			<tr>\
+	</tbody>\
+</table>\
+\
+Tip : don\'92t use tables for layout \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 <hr> : horizontal line tag\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Forms:\
+\
+<form action=\'93 location \'94 , method=\'93post\'94 / method=\'93get\'94 >\
+	<div>\
+		<label> First name </label>\
+		<input type =\'93text\'94 name=\'93first-name\'94>\
+	</div>\
+	<div>\
+		<label> Last name </label>\
+		<input type =\'93text\'94 name=\'93last-name\'94>\
+	</div>\
+	<div>\
+		<label> Email</label>\
+		<input type = \'93email\'94 name=\'93email\'94> \
+	</div>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	<div>\
+		<label> Message</label>\
+		<textarea  name=\'93email\'94> </textarea>\
+	</div>\
+	<div>\
+		<label>Gender</label>\
+		<select  name=\'93gender\'94>\
+		<option value=\'93male\'94> Male</option>\
+		<option value=\'93male\'94 > Female</option>\
+		<option value=\'93other\'94> Other </option>\
+	</div>\
+	<div>\
+		<label> Age: </label>\
+		<input type=\'93number\'94  name=\'93age\'94 value=\'9330\'94 placeholder =\'9318\'94> \
+	</div>\
+	<div>\
+		<label> Birthday  </label>\
+		<input type=\'93date\'94  name=\'93Birthday\'94 > \
+	</div>\
+	<input type=\'93Submit\'94 name=\'93submit\'94 value=\'93submit\'94>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 </form>\
+\
+Button:\
+	<button click=\'93function\'94> Click me </button> \
+\
+Image: it is a self closing tag\
+<img src=\'93 \'93 alt=\'93 Image Text\'93 width=\'93\'94 height=\'93\'94 > recommended to use css to adjust height and width.\
+\
+Quotations:\
+\
+<blockquote cite=\'93 \'93>\
+</blockquote>\
+\
+<abbr> : abbreviation tag\
+\
+<p> the <abbr title=\'93World Wide Web\'94> www</abbr> is awesome\
+\
+<p> <cite>HTML Course</cite> on Youtube</p>\
+\
+\
+\
+HTML5 Sematic tags: semantic Elements clearly describe its meaning to both the browser and the developer.\
+\
+<header></header>\
+<footer></footer>\
+<aside></aside>\
+<main></main>\
+<article></article>\
+<nav></nav>\
+<section</section>\
+<details></details>\
+\pard\tx161\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0  \
+}
